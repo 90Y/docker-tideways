@@ -10,5 +10,8 @@ RUN echo 'deb http://s3-eu-west-1.amazonaws.com/qafoo-profiler/packages debian m
 
 ADD run.sh /run.sh
 
+EXPOSE 9135
+EXPOSE 8135/udp
+
 CMD ["/run.sh"]
 
